@@ -1,0 +1,12 @@
+##To start, define a function called strip_punctuation which takes one parameter, a string which represents a word, and removes characters considered punctuation from everywhere in the word. (Hint: remember the .replace() method for strings.)
+
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+def strip_punctuation(word):
+    New_word=""  
+    print("Word is: ",word)
+    for w in word:
+        if w not in punctuation_chars:
+            New_word=New_word+w
+    return New_word
